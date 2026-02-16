@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Premium | Mecânica Maringá</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+<body>
+
+<header>
+        <div class="logo">
+            <img src="logo.png" alt="Mecânica Maringá">
+        </div>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Voltar para Home</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="mobile-menu-overlay" id="mobileMenu">
+            <span class="close-btn-mobile" onclick="toggleMenu()">&times;</span>
+            
+            <div class="mobile-logo-area">
+                <img src="logo.png" alt="Logo Mobile">
+            </div>
+
+            <div class="mobile-links">
+                <a href="index.html">VOLTAR PARA HOME</a>
+                <a href="servicos.html" onclick="toggleMenu()" class="destaque">SERVIÇOS</a>
+                <a href="https://wa.me/5566997265814" target="_blank">WHATSAPP</a>
+            </div>
+             
+             <div class="mobile-footer">
+                <a href="#" class="icon-social"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon-social"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/5566997265814" class="icon-social"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-ht-section">
+        <div class="ht-container">
+            <div class="section-header">
+                <h2>Nossas Especialidades</h2>
+                <h1>Menu de Serviços</h1>
+                <div class="linha-divisoria"></div>
+            </div>
+
+            <div class="ht-grid">
+                <div class="ht-card" onclick="abrirModal('diagnostico')">
+                    <div class="icon-area">
+                        <img src="icones/diagnostico.png" alt="Diagnóstico" class="icon-img" style="transform: scale(1.3);">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Diagnóstico</h3>
+                </div>
+
+                <div class="ht-card" onclick="abrirModal('cambio')">
+                    <div class="icon-area">
+                        <img src="icones/cambio.png" alt="Câmbio" class="icon-img" style="transform: scale(1.3);">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Câmbio</h3>
+                </div>
+
+                <div class="ht-card" onclick="abrirModal('embreagem')">
+                    <div class="icon-area">
+                        <img src="icones/embreagem.png" alt="Embreagem" class="icon-img">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Embreagem</h3>
+                </div>
+
+                <div class="ht-card" onclick="abrirModal('alinhamento')">
+                    <div class="icon-area">
+                        <img src="icones/alinhamento.png" alt="Alinhamento" class="icon-img">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Alinhamento</h3>
+                </div>
+
+                <div class="ht-card" onclick="abrirModal('suspensao')">
+                    <div class="icon-area">
+                        <img src="icones/suspensao.png" alt="Suspensão" class="icon-img" style="transform: scale(1.6);">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Suspensão</h3>
+                </div>
+
+                <div class="ht-card" onclick="abrirModal('freios')">
+                    <div class="icon-area">
+                        <img src="icones/freios.png" alt="Freios" class="icon-img" style="transform: scale(1.6);">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Freios</h3>
+                </div>
+
+                <div class="ht-card" onclick="abrirModal('injecao')">
+                    <div class="icon-area">
+                        <img src="icones/injecao.png" alt="Injeção" class="icon-img" style="transform: scale(1.1);">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Injeção</h3>
+                </div>
+
+                <div class="ht-card" onclick="abrirModal('correia')">
+                    <div class="icon-area">
+                        <img src="icones/correia.png" alt="Correia" class="icon-img" style="transform: scale(1.6);">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Correia</h3>
+                </div>
+
+                <div class="ht-card" onclick="abrirModal('oleo')">
+                    <div class="icon-area">
+                        <img src="icones/oleo.png" alt="Troca de Óleo" class="icon-img" style="transform: scale(1.3);">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Troca de Óleo</h3>
+                </div>
+
+                <div class="ht-card" onclick="abrirModal('filtros')">
+                    <div class="icon-area">
+                        <img src="icones/filtros.png" alt="Filtros" class="icon-img" style="transform: scale(1.3);">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Filtros</h3>
+                </div>
+
+                <div class="ht-card" onclick="abrirModal('higienizacao')">
+                    <div class="icon-area">
+                        <img src="icones/higienizacao.png" alt="Higienização" class="icon-img" style="transform: scale(1.3);">
+                    </div>
+                    <div class="ht-btn-circle"><i class="fas fa-arrow-right"></i></div>
+                    <h3>Higienização</h3>
+                </div>
+            </div>
+    </section>
+
+    <div id="modal-servico" class="modal-overlay">
+        <div class="modal-content-premium">
+            <span class="close-modal-premium" onclick="fecharModal()">&times;</span>
+            <div class="modal-left">
+                <div class="modal-header-text">
+                    <span class="modal-category">SERVIÇO ESPECIALIZADO</span>
+                    <h2 id="modal-titulo">TÍTULO</h2>
+                    <div class="linha-vermelha-modal"></div>
+                </div>
+                <p id="modal-descricao">Descrição...</p>
+                <a href="https://wa.me/5566997265814" class="btn-agendar-premium">AGENDAR AGORA</a>
+            </div>
+            <div class="modal-right">
+                <img id="modal-img" src="" alt="Serviço">
+                <div class="img-gradient"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

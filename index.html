@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecânica Maringá | Especialista em Pesados</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+        <div class="logo">
+            <img src="logo.png" alt="Mecânica Maringá">
+        </div>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#sobre">A Oficina</a></li>
+                <li><a href="#contato">Localização</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-icon" id="hamburgerBtn" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="mobile-menu-overlay" id="mobileMenu">
+            <div class="mobile-logo-area">
+                <img src="logo.png" alt="Logo Mobile">
+            </div>
+
+            <div class="mobile-links">
+                <a href="servicos.html">SERVIÇOS</a> <a href="#sobre" onclick="toggleMenu()">A OFICINA</a>
+                <a href="#contato" onclick="toggleMenu()">LOCALIZAÇÃO</a>
+                <a href="https://wa.me/5566997265814" target="_blank" class="destaque">ORÇAMENTO</a>
+            </div>
+
+            <div class="mobile-footer">
+                <a href="#" class="icon-social"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon-social"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/5566997265814" class="icon-social"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        
+        <div class="slider-wrapper">
+            <div class="slider-track">
+                
+                <div class="slide">
+                    <video autoplay muted loop playsinline>
+                        <source src="video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="slide">
+                    <video autoplay muted loop playsinline>
+                        <source src="video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="slide">
+                    <img src="foto-oficina.png" alt="Foto da Oficina">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h2>Manutenção de Linha Pesada</h2>
+            <h1>
+                Cuidamos da sua <br>
+                <span class="digitar-texto"></span><span class="cursor">&nbsp;</span>
+            </h1>
+            <a href="https://wa.me/5566997265814" class="btn-zap" target="_blank">
+                <i class="fab fa-whatsapp" style="margin-right: 10px; font-size: 1.2rem;"></i>
+                Orçamento Rápido
+            </a>
+            
+            <div class="slider-dots">
+                <div class="dot active" onclick="irParaSlide(0)"></div>
+                <div class="dot" onclick="irParaSlide(1)"></div>
+                <div class="dot" onclick="irParaSlide(2)"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Referência em Sinop e Região</h3>
+                <h2>Desde 2010 mantendo sua frota rodando com <span class="destaque-vermelho">peças originais e tecnologia.</span></h2>
+                <div class="linha-vermelha"></div>
+                <p>Não somos apenas trocadores de peças. A Mecânica Maringá traz a experiência de quem entende de motor a diesel e sistemas hidráulicos complexos. Atendemos Scania, Volvo, Mercedes e maquinário agrícola.</p>
+                
+                <a href="#contato" class="btn-outline">Conheça Nossa Estrutura</a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mecânico trabalhando">
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="section-title">
+            <h2>Nossas Especialidades</h2>
+            <p>Soluções completas para cavalos mecânicos e carretas.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-truck-monster"></i>
+                <h3>Motor e Câmbio</h3>
+                <p>Retífica completa, troca de kits e manutenção preventiva de caixas.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Freio a Ar</h3>
+                <p>Manutenção de válvulas, cuícas e sistemas pneumáticos de precisão.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-oil-can"></i>
+                <h3>Suspensão</h3>
+                <p>Molas, bolsas de ar e alinhamento a laser para pesados.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Elétrica e Injeção</h3>
+                <p>Diagnóstico computadorizado para identificar falhas eletrônicas.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="footer-col">
+                <img src="logo.png" alt="Mecânica Maringá" style="width: 200px;">
+                <p>Sua parceira de confiança na estrada. Qualidade e transparência no serviço pesado.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (66) 99726-5814</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua dos Eucaliptos, 1200 - Sinop, MT</p>
+                <p><i class="fas fa-envelope"></i> contato@mecanicamaringa.com.br</p>
+            </div>
+            <div class="footer-col">
+                <h3>Horário</h3>
+                <p>Seg - Sex: 07:30 - 18:00</p>
+                <p>Sábado: 07:30 - 12:00</p>
+                <p class="plantao">Plantão 24h no Zap</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mecânica Maringá. <strong>Todos os direitos reservados</strong>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
